@@ -22,7 +22,7 @@ a {
 }
 
 a:hover,
-#adicionarCarrinho:hover {
+.adicionarCarrinho:hover {
     font-size: 150%;
     color: #9f9ea5;
     font-weight: bold;
@@ -81,7 +81,7 @@ img {
     top: 99px;
 }
 
-img:hover {
+#vitrine img:hover {
     width: 100%;
     height: 100%;
 }
@@ -136,7 +136,7 @@ p {
     color: #2E245E;
 }
 
-#adicionarCarrinho {
+.adicionarCarrinho {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -176,7 +176,7 @@ p {
     color: #FFFFFF;
 }
 
-section {
+#vitrine section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +185,7 @@ section {
     background: #F5F5F5;
 }
 
-section:hover {
+#vitrine section:hover {
     background-color: #9f9ea5;
 }
 
@@ -206,6 +206,11 @@ aside {
     width: 347px;
     height: 395px;
     background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 h4 {
@@ -222,7 +227,44 @@ h4 {
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
-    margin-bottom: 140px;
+}
+
+
+/*js*/
+
+.carrinhoVazio {
+    margin-bottom: 197px;
+    color: #000000;
+}
+
+.carrinhoCheio {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamanhoImagemAtual {
+    width: 76px;
+    height: 80px;
+}
+
+.classCarrinho {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+    margin: 10px;
+}
+
+.corTexto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 10px;
 }
 
 h5 {
@@ -245,4 +287,58 @@ h6 {
     font-size: 14px;
     line-height: 16px;
     color: #828282;
+}
+
+#vivi {
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+
+.informacoesProdutos {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+
+#removerItem {
+    border: none;
+    text-decoration-line: underline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    background: rgb(245, 245, 245);
+}
+
+#iza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #333333;
+}
+
+.palavraLi {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.palavraLa {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
 }
